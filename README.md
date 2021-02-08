@@ -23,7 +23,7 @@ Once a device is selected, the two phones will start generating the contact trac
 <img src="https://github.com/kaustubh-gupta/ZITA/blob/main/ZITA_Screenshots/phoneX/Screenshot_20210122-215930_ZITA%20Bluetooth.jpg" width="200" height="400" >
 </p>
 
-The contact traces are hashed and saved in both phones on quitting the application.
+The contact traces are hashed and saved in both phones upon quitting the application.
 
 ### Step 2. Installing the ZITA Client Server App
 To run the server, simply run the application on Intellij: 
