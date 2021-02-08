@@ -4,7 +4,7 @@
 
 Download the code from the repository and simply use Intellij with Maven to run the server and Android studio with gradle for the client and the Bluetooth App. The IDE should be able to automatically detect the project which can then be ran.
 
-### Step 1. Installing the ZITA Bluetooth App
+### Step 1. Installing and running the ZITA bluetooth app
 The ZITA Bluetooth App can be installed on two android phones to test the app. Once the app is downloaded, pair the two phones using bluetooth. When you open the app, you will see this screen:
 
 <p align="center">
@@ -25,7 +25,7 @@ Once a device is selected, the two phones will start generating the contact trac
 
 The contact traces are hashed and saved in both phones upon quitting the application.
 
-### Step 2. Installing the ZITA Client Server App
+### Step 2. Installing and running the ZITA client server app
 To run the server, simply run the application on Intellij: 
 
 <p align="center">
