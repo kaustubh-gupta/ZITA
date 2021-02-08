@@ -121,8 +121,6 @@ public class BluetoothChatFragment extends Fragment {
             timer.purge();
             mChatService.stop();
 
-            Toast.makeText(getContext(), "Turn Wi-Fi off to start generating contact trace", Toast.LENGTH_LONG).show();
-
             FragmentActivity activity = getActivity();
             activity.finish();
 
@@ -139,14 +137,7 @@ public class BluetoothChatFragment extends Fragment {
             public void run() {
                 handler.post(new Runnable() {
                     public void run() {
-//                        ConnectivityManager connManager = (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
-//                        NetworkInfo mWifi = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-//                        if (mWifi.isConnected()) {
-//                            stopTimer();
-//                        } else {
                             mSendButton.performClick();
-
-//                        }
                     }
                 });
             }
@@ -208,9 +199,14 @@ public class BluetoothChatFragment extends Fragment {
         super.onDestroy();
         if (mChatService != null) {
             mChatService.stop();
-            stopTimer();
         }
     }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+            stopTimer();
+        }
 
     @Override
     public void onResume() {
