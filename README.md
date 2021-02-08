@@ -8,7 +8,7 @@ Download the code from the repository and simply use Intellij with Maven to run 
 The ZITA Bluetooth App can be installed on two android phones to test the app. Once the app is downloaded, pair the two phones using bluetooth. When you open the app, you will see this screen:
 
 <p align="center">
-<img src="https\://github.com/kaustubh-gupta/ZITA/blob/main/ZITA_Screenshots/phoneX/Screenshot_20210122-215956_ZITA%20Bluetooth.jpg" width="200" height="400" >
+<img src="https://github.com/kaustubh-gupta/ZITA/blob/main/ZITA_Screenshots/phoneX/Screenshot_20210122-215956_ZITA%20Bluetooth.jpg" width="200" height="400" >
 </p>
 
 Next, make sure the app has permission to the phone storage in Settings. Then, click on the Bluetooth button on the top right corner and the list of available devices will pop up:
