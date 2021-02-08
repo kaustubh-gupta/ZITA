@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtIP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.activity.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+
+        android:layout_height="276dp"
+        android:src="@drawable/zita"
+        app:layout_constraintEnd_toEndOf="@+id/txt_ip"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/txt_ip"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <EditText
+        android:id="@+id/txt_ip"
+        style="@style/editText_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:hint="xxx.xxx.xxx.xxx"
+        android:imeOptions="actionDone"
+        android:text="192.168.0.129"
+        android:textColorHighlight="#C6BBE9FF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPort"
+        app:layout_constraintEnd_toEndOf="@+id/txtPort"
+        app:layout_constraintStart_toStartOf="@+id/txtPort"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtPort"
+        style="@style/editText_style"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:text="5000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ip" />
+
+    <EditText
+        android:id="@+id/serverName"
+        style="@style/editText_style"
+        android:layout_width="161dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:hint="Enter D or S here"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPort"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/btnConnect"
+        style="@style/button_style"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:text="Connect "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtPort"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="@+id/txtPort"
+        app:layout_constraintTop_toBottomOf="@+id/txtPort"
+        app:layout_constraintVertical_bias="0.454" />
+
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+</android.support.constraint.ConstraintLayout>
